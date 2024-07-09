@@ -1,0 +1,127 @@
+.faq-accordion__background {
+  margin: 0 auto;
+  max-width: 375px;
+  position: relative;
+
+  &-below {
+    background-color: $color-pink;
+    height: 580px;
+
+    @media (min-width: 1440px) {
+      max-width: 1440px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+  }
+}
+
+.faq-accordion__card-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-accordion__card {
+  background-color: $color-white;
+  border-radius: 8px;
+  width: 327px;
+  margin: 0 auto;
+  position: absolute;
+  top: 143px;
+  left: 24px;
+  padding: 24px;
+
+  @media (min-width: 1440px) {
+    width: 600px;
+    top: 138px;
+    left: 420px;
+    padding: 40px;
+    border-radius: 16px;
+  }
+}
+
+.faq-accordion__seperator {
+  border: solid 1px $color-pink;
+}
+
+.faq-accordion__faq {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+
+  @media (min-width: 1440px) {
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.faq-accordion__star img {
+  width: 21px;
+  height: 21px;
+}
+
+.faq-accordion__heading {
+  color: $color-purple;
+}
+
+.faq-accordion__FAQ {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style-type: none;
+}
+
+.faq-accordion__questions-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &--expand {
+    .faq-accordion__answer,
+    .minus {
+      display: block;
+    }
+    .plus {
+      display: none;
+    }
+  }
+}
+
+.minus {
+  display: none;
+}
+
+.faq-accordion__questions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-accordion__q {
+  text-align: left;
+  color: $color-purple;
+  width: 225px;
+  transition: color 0.5s ease-out;
+
+  @media (min-width: 1440px) {
+    width: 520px;
+  }
+
+  &:hover {
+    color: $color-secondary;
+    cursor: url('/assets/images/cursor-icon.svg'), pointer;
+  }
+}
+
+.faq-accordion__answer {
+  display: none;
+  color: $color-primary;
+  text-align: left;
+}
+
+.faq-accordion__icons {
+  display: flex;
+}

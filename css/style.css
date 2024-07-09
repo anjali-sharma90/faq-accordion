@@ -1,0 +1,285 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1;
+  min-width: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input,
+select {
+  vertical-align: middle; }
+
+* {
+  box-sizing: border-box; }
+
+.h1 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 0px;
+  line-height: 100%; }
+  @media (min-width: 1440px) {
+    .h1 {
+      font-size: 56px; } }
+
+.h2 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 0px;
+  line-height: 100%; }
+  @media (min-width: 1440px) {
+    .h2 {
+      font-size: 18px; } }
+
+.p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 0px;
+  line-height: 150%; }
+  @media (min-width: 1440px) {
+    .p {
+      font-size: 16px; } }
+
+.faq-accordion__background {
+  margin: 0 auto;
+  max-width: 375px;
+  position: relative; }
+  .faq-accordion__background-below {
+    background-color: #f9f0ff;
+    height: 580px; }
+    @media (min-width: 1440px) {
+      .faq-accordion__background-below {
+        max-width: 1440px; } }
+  @media (min-width: 1440px) {
+    .faq-accordion__background {
+      max-width: 1440px; } }
+
+.faq-accordion__card-box {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.faq-accordion__card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 327px;
+  margin: 0 auto;
+  position: absolute;
+  top: 143px;
+  left: 24px;
+  padding: 24px; }
+  @media (min-width: 1440px) {
+    .faq-accordion__card {
+      width: 600px;
+      top: 138px;
+      left: 420px;
+      padding: 40px;
+      border-radius: 16px; } }
+
+.faq-accordion__seperator {
+  border: solid 1px #f9f0ff; }
+
+.faq-accordion__faq {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px; }
+  @media (min-width: 1440px) {
+    .faq-accordion__faq {
+      gap: 32px;
+      margin-bottom: 32px; } }
+
+.faq-accordion__star img {
+  width: 21px;
+  height: 21px; }
+
+.faq-accordion__heading {
+  color: #2f1533; }
+
+.faq-accordion__FAQ {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style-type: none; }
+
+.faq-accordion__questions-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; }
+  .faq-accordion__questions-card--expand .faq-accordion__answer,
+  .faq-accordion__questions-card--expand .minus {
+    display: block; }
+  .faq-accordion__questions-card--expand .plus {
+    display: none; }
+
+.minus {
+  display: none; }
+
+.faq-accordion__questions {
+  display: flex;
+  justify-content: space-between; }
+
+.faq-accordion__q {
+  text-align: left;
+  color: #2f1533;
+  width: 225px;
+  transition: color 0.5s ease-out; }
+  @media (min-width: 1440px) {
+    .faq-accordion__q {
+      width: 520px; } }
+  .faq-accordion__q:hover {
+    color: #ad28eb;
+    cursor: url("/assets/images/cursor-icon.svg"), pointer; }
+
+.faq-accordion__answer {
+  display: none;
+  color: #8c6991;
+  text-align: left; }
+
+.faq-accordion__icons {
+  display: flex; }
